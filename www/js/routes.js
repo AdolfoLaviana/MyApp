@@ -40,6 +40,12 @@ angular.module('app.routes', [])
     controller: 'otherCtrl'
   })
 
+  .state('settings', {
+    url: '/page9',
+    templateUrl: 'templates/settings.html',
+    controller: 'settingsCtrl'
+  })
+
 $urlRouterProvider.otherwise('/page6')
 
   
