@@ -28,6 +28,7 @@ $scope.title = "";
 $scope.picture = "";
 $scope.description = "";
 $scope.number = -1;
+$scope.numGuardado = -1;
 
 $scope.objectform = function(){
 	$scope.menuType = false;
@@ -46,7 +47,11 @@ $scope.nAleatorio = function(map){
 }
 
 $scope.generate = function(map){
+	var antes = $scope.number;
 	$scope.nAleatorio(map);
+	while(antes === $scope.number){
+		$scope.nAleatorio(map);
+	}
 	var n = $scope.number;
 	console.log("numero"+n);
 	$scope.title = map[n].titulo;                       
@@ -54,6 +59,7 @@ $scope.generate = function(map){
 	$scope.description = map[n].descripcion;
 }
 $scope.selectMap = function(num){
+	$scope.numGuardado = num;
 	if(num === 0){
 		$scope.generate($scope.homeMap);
 	}
