@@ -5,13 +5,13 @@
   <ion-content padding="true" class="has-header">
     <h2 id="menu-heading9" style="color:#000000;font-weight:400;">Elige Como y donde</h2>
     <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
-      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;" ng-click="objectform()"></i>
+      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;" ng-click="objectform(); selectMap(0)"></i>
     </div>
     <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
-      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;" ng-click="objectform()"></i>
+      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;" ng-click="objectform(); selectMap(1)"></i>
     </div>
     <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
-      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;" ng-click="objectform()"></i>
+      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;" ng-click="objectform(); selectMap(2)"></i>
     </div>
   </ion-content>
   </form>
@@ -20,11 +20,12 @@
   <div ng-show="objectType">
   <form id="objectform" class="">
     <ion-content padding="true" class="has-header">
-      <h2 id="menu-heading9" style="color:#000000;font-weight:400; text-align: center;">{title}</h2>
+      <h2 id="menu-heading9" style="color:#000000;font-weight:400; text-align: center;">{{title}}</h2>
       <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
         <img src="../../img/ruta.jpg" style="width: 100%;"/>
-      <p style="text-align: center">{hola}</p>
-      <a ui-sref="menu" id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block icon-left ion-android-bulb" ng-click="menuform()">prueba</a>
+      <p style="text-align: center">{{description}}</p>
+      <a  id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block icon-left ion-android-bulb" ng-click="selectMap(numGuardado)">Siguiente</a>
+      <a ui-sref="menu" id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block icon-left ion-android-bulb" ng-click="menuform()">Menu</a>
       </div>
     </ion-content>
   </form>
