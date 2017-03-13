@@ -5,12 +5,18 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services',])
+angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives','app.services','pascalprecht.translate','ngCookies',])
 
-.config(function($ionicConfigProvider, $sceDelegateProvider){
+.config(function($ionicConfigProvider, $sceDelegateProvider, $translateProvider){
   
 
   $sceDelegateProvider.resourceUrlWhitelist([ 'self','*://www.youtube.com/**', '*://player.vimeo.com/video/**']);
+  $translateProvider.translations('en', translationsEN);
+  $translateProvider.translations('es', translationsES);
+  $translateProvider.preferredLanguage('en');
+  $translateProvider.fallbackLanguage('en');
+  $translateProvider.useLocalStorage();
+  $translateProvider.useSanitizeValueStrategy('escape');
 
 })
 
@@ -82,3 +88,15 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
     }
   };
 });
+
+var translationsEN = {
+  
+  BUTTON_LANG_ES: 'Spanish',
+  BUTTON_LANG_EN: 'English'
+};
+
+var translationsES= {
+  
+  BUTTON_LANG_ES: 'Español',
+  BUTTON_LANG_EN: 'Inglés'
+};
