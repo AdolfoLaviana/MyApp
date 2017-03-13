@@ -12,45 +12,17 @@ $scope.menuType = true;
 $scope.objectType = false;
 
 $scope.homeMap = [
-	{
-		titulo:"Ir de playa",
-		url: ".../../img/playa.jpg",
-		descripcion: "Disfrutar de un bonito y soleado dia de playa"
-	},
-	{
-		titulo:"Ir de ruta",
-		url: "../../img/ruta.jpg",
-		descripcion: "Aprovecha el día y sal de casa"
-	},
+
+
 	{
 		titulo:"Cine",
 		url: "../../img/cine.jpg",
 		descripcion: "Que mejor manera de pasar el día que ver una película en el cine"
 	},
 	{
-		titulo:"Paseo",
-		url: "../../img/paseo.jpg",
-		descripcion: "simplemente pasea"
-	},
-	{
-		titulo:"Tiendas",
-		url: "../../img/tiendas.jpg",
-		descripcion: "tal vez sea momento de unas compras"
-	},
-	{
-		titulo:"Piscina",
-		url: "../../img/piscina.jpg",
-		descripcion: "Un chapuzón??"
-	},
-	{
 		titulo:"Television",
 		url: "../../img/tele.jpg",
 		descripcion: "Tal vez lo que buscas es una relajada tarde de sofá"
-	},
-	{
-		titulo:"Deporte",
-		url: "../../img/deporte.jpg",
-		descripcion: "disfruta del día y ejercítate"
 	},
 	{
 		titulo:"Cocinar",
@@ -70,16 +42,8 @@ $scope.carMap = [
 		url: "../../img/ruta.jpg",
 		descripcion: "Aprovecha el día y sal de casa"
 	},
-	{
-		titulo:"Cine",
-		url: "../../img/cine.jpg",
-		descripcion: "Que mejor manera de pasar el día que ver una película en el cine"
-	},
-	{
-		titulo:"Paseo",
-		url: "../../img/paseo.jpg",
-		descripcion: "simplemente pasea"
-	},
+
+
 	{
 		titulo:"Tiendas",
 		url: "../../img/tiendas.jpg",
@@ -89,22 +53,10 @@ $scope.carMap = [
 		titulo:"Piscina",
 		url: "../../img/piscina.jpg",
 		descripcion: "Un chapuzón??"
-	},
-	{
-		titulo:"Television",
-		url: "../../img/tele.jpg",
-		descripcion: "Tal vez lo que buscas es una relajada tarde de sofá"
-	},
-	{
-		titulo:"Deporte",
-		url: "../../img/deporte.jpg",
-		descripcion: "disfruta del día y ejercítate"
-	},
-	{
-		titulo:"Cocinar",
-		url: "../../img/cocinar.jpg",
-		descripcion: "Por que no convertirte en un auténtico Gourmet"
 	}
+
+
+
 ];
 
 $scope.otherMap = [
@@ -138,21 +90,13 @@ $scope.otherMap = [
 		url: "../../img/piscina.jpg",
 		descripcion: "Un chapuzón??"
 	},
-	{
-		titulo:"Television",
-		url: "../../img/tele.jpg",
-		descripcion: "Tal vez lo que buscas es una relajada tarde de sofá"
-	},
+
 	{
 		titulo:"Deporte",
 		url: "../../img/deporte.jpg",
 		descripcion: "disfruta del día y ejercítate"
-	},
-	{
-		titulo:"Cocinar",
-		url: "../../img/cocinar.jpg",
-		descripcion: "Por que no convertirte en un auténtico Gourmet"
 	}
+
 ];
 
 $scope.title = "";                       
