@@ -1,9 +1,9 @@
-<ion-view title="Menu" id="page2">
+<ion-view title="{{ 'MENU' | translate }}" id="page2">
 
   <div ng-show="menuType">
 <form id="menuform" class="">
   <ion-content   padding="true" class="has-header">
-    <h2 id="menu-heading9" style="color:#000000;font-weight:400; text-align: center; line-height: 100px">Elige Como y donde</h2>
+    <h2 id="menu-heading9" style="color:#000000;font-weight:400; text-align: center; line-height: 100px">{{'CHOOSE' | translate}}</h2>
     <div style="margin: 0px; line-height: 100px; text-align: center;">
       <img src="../../img/house.png" style="width: 20%" ng-click="objectform(); selectMap(0)"/>
     </div>
@@ -30,9 +30,9 @@
       <p style="text-align: center">{{description}}</p>
       </div>
         <div style="margin: 0px; line-height: 100px;  text-align: center;">
-      <a  id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block" ng-click="selectMap(numGuardado)">Siguiente</a>
+      <a  id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block" ng-click="selectMap(numGuardado)">{{ 'NEXT' | translate}}</a>
     
-      <a ui-sref="menu" id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block " ng-click="menuform()">Menu</a> 
+      <a ui-sref="menu" id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block " ng-click="menuform()">{{ 'MENU' | translate }}</a> 
         </div>
     </ion-content>
   </form>
