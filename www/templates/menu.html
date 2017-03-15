@@ -3,7 +3,7 @@
   <div ng-show="menuType">
 <form id="menuform" class="">
   <ion-content   padding="true" class="has-header">
-    <h2 id="menu-heading9" style="color:#000000; font-weight:550; text-align: center; line-height: 70px">{{ 'CHOOSE' | translate }}</h2>
+    <h2 id="menu-heading9" style="color:#000000;font-weight:400; text-align: center; line-height: 100px">Elige Como y donde</h2>
     <div style="margin: 0px; line-height: 100px; text-align: center;">
       <img src="../../img/house.png" style="width: 20%" ng-click="objectform(); selectMap(0)"/>
     </div>
@@ -21,20 +21,19 @@
   <form id="objectform" class="">
     <ion-content padding="true" class="has-header">
     <div style="margin: 0px; line-height: 40px;  text-align: center;">
-      <h2 id="menu-heading9" style="color:#000000;font-weight:400; text-align: center; line-height: 70px">{{title}}</h2>
+      <h2 id="menu-heading9" style="color:#000000;font-weight:400; text-align: center; line-height: 100px">{{title}}</h2>
       </div>
       <div style="margin: 0px; line-height: 30px;  text-align: center;">
-        <img src="{{picture}}" style="width: 70%;max-width: 350px;"/>
+        <img src="{{picture}}" style="width: 100%;max-width: 350px;"/>
         </div>
       <div>
       <p style="text-align: center">{{description}}</p>
       </div>
-        <div style="margin: 0px; line-height: 70px;  text-align: center;">
-      <a  id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block" ng-click="selectMap(numGuardado)">{{ 'NEXT' | translate }}</a>
+        <div style="margin: 0px; line-height: 100px;  text-align: center;">
+      <a  id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block" ng-click="selectMap(numGuardado)">Siguiente</a>
     
-      <a ui-sref="menu" id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block " ng-click="menuform()">{{ 'MENU' | translate }}</a> 
+      <a ui-sref="menu" id="login-button11" style="font-weight:600;color:#000000;border-radius:10000px 10000px 10000px 10000px;" class="button button-assertive  button-block " ng-click="menuform()">Menu</a> 
         </div>
-         <footer>Created by:</footer>
     </ion-content>
   </form>
   </div>

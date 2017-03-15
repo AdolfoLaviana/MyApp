@@ -92,19 +92,11 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
 var translationsEN = {
   
   BUTTON_LANG_ES: 'Spanish',
-  BUTTON_LANG_EN: 'English',
-  START:'Start',
-  CHOOSE:'Choose Where and How',
-  MENU:'Menu',
-  NEXT:'Next',
+  BUTTON_LANG_EN: 'English'
 };
 
 var translationsES= {
   
   BUTTON_LANG_ES: 'Español',
-  BUTTON_LANG_EN: 'Inglés',
-  START:'Comienza',
-  CHOOSE:'Elige Dónde y Cuándo',
-  MENU:'Menú',
-  NEXT:'Siguiente',
+  BUTTON_LANG_EN: 'Inglés'
 };
